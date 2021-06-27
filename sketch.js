@@ -47,7 +47,7 @@ function basicgraph() {
     ctx.moveTo(0, -randomthingidk);
     ctx.lineTo(0, randomthingidk);
     ctx.moveTo(-100, 0);
-    ctx.lineTo(randomthingidk, 0);
+    ctx.lineTo(xboundary, 0);
     ctx.moveTo(xboundary, randomthingidk);
     ctx.lineTo(xboundary, -randomthingidk);
     ctx.stroke();
