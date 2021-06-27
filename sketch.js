@@ -5,7 +5,7 @@ var ctx = c.getContext("2d");
 let randomthingidk = 500;
 ctx.translate(200, randomthingidk);
 
-let xboundary = randomthingidk;
+let xboundary = 1000;
 ctx.moveTo(xboundary, randomthingidk);
 ctx.lineTo(xboundary, -randomthingidk);
 let radius = 10;
