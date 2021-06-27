@@ -1,11 +1,13 @@
 
 var c = document.getElementById("hello");
 var ctx = c.getContext("2d");
-ctx.translate(200, 1000);
 
-let xboundary = 1000;
-ctx.moveTo(xboundary, 1000);
-ctx.lineTo(xboundary, -1000);
+let randomthingidk = 500;
+ctx.translate(200, randomthingidk);
+
+let xboundary = randomthingidk;
+ctx.moveTo(xboundary, randomthingidk);
+ctx.lineTo(xboundary, -randomthingidk);
 let radius = 10;
 
 let scale = 1;
@@ -14,11 +16,11 @@ let t = 0;
 let dt = 0.05;
 
 let x = radius;
-let dx = 10;
+let dx = dt* 250;
 let d2x = dt * (0);
 
 let y = 100;
-let dy = dt * (200);
+let dy = dt * (300);
 let d2y = -20;
 
 
@@ -36,18 +38,18 @@ function basicgraph() {
     
 
     ctx.fillStyle = "black";
-    ctx.fillRect(-200, -1000, 1800, 2000);
+    ctx.fillRect(-200, -randomthingidk, 1800, 2000);
     ctx.fillStyle = "red";
     ctx.fillRect(x * scale, y * -1 * scale, radius, radius);
     ctx.fill();
 
     ctx.strokeStyle = "lightblue";
-    ctx.moveTo(0, -1000);
-    ctx.lineTo(0, 1000);
+    ctx.moveTo(0, -randomthingidk);
+    ctx.lineTo(0, randomthingidk);
     ctx.moveTo(-100, 0);
-    ctx.lineTo(1000, 0);
-    ctx.moveTo(xboundary, 1000);
-    ctx.lineTo(xboundary, -1000);
+    ctx.lineTo(randomthingidk, 0);
+    ctx.moveTo(xboundary, randomthingidk);
+    ctx.lineTo(xboundary, -randomthingidk);
     ctx.stroke();
 
     dy += d2y * dt;
